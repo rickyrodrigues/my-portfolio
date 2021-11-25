@@ -71,10 +71,10 @@ margin-bottom: 0;
 margin: 0;
 }
 
-/* .divider > section { */
-/* border-bottom: 1px dashed #304d6d; */
-/* padding: 25px 0; */
-/* } */
+.divider > section {
+border-bottom: 1px dashed #304d6d;
+padding: 25px 0;
+}
 .divider > section:last-of-type {
 border-bottom: none;
 }
@@ -104,7 +104,7 @@ header {
 
 .hobby-item {
   /* display: grid; */
-  grid-template-columns: 1fr 2fr;
+  /* grid-template-columns: 1fr 2fr; */
   justify-items: stretch;
   align-content: center;
   justify-content: start;
@@ -116,7 +116,7 @@ header {
 .project {
   background: #3d5268;
 }
-/* btn- button */
+btn- button
 .project a {
   color: #5e60c2;
 }
@@ -140,7 +140,7 @@ header {
 -------------------------------*/
 
 .education {
-  background-image: url(https://rickyrodrigz.w3spaces.com/images/joanna-kosinska-unsplash.jpg);
+  background-image: url(C:\Users\RICKY\Documents\GitHub\my-first-site\images\joanna-kosinska-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
@@ -164,7 +164,9 @@ footer {
   padding: 15px;
   display: inline-block;
 }
+
 /* Responsive */
+
 @media screen and (min-width: 750px) {
   header, footer {
     text-align: center;
@@ -203,5 +205,6 @@ h2 {
 }
 .contact-list a {
   padding: 5px;
+}
 }
 }
