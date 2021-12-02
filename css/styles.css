@@ -140,11 +140,36 @@ header {
 -------------------------------*/
 
 .education {
-  background-image: url(my-first-site\images\joanna-kosinska-unsplash.jpg);
+
+    animation-name: bg-Color-Change ;
+ animation-duration: 10s;
+ animation-delay: -2s;
+ animation-iteration-count: infinite;
+}
+
+@keyframes bg-Color-Change {
+    0% {
+        background-color: rgb(148, 163, 175);
+    }
+    25% {
+        background-color: antiquewhite
+    }
+    50% {
+        background-color: rgb(211, 203, 193)
+    }
+    75% {
+        background-color: rgb(126, 165, 165)
+    }
+    100% {
+        background-color: rgb(171, 169, 173);
+    }
+}
+/* {
+  background-image: url(https://github.com/rickyrodrigues/my-portfolio/blob/1762b5352dc47f1929ffc81e80b40a464f09a0be/images/joanna-kosinska-unsplash.jpg);
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
-}
+  } */
 .education p {
   width: 60%;
 }
