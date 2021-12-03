@@ -140,14 +140,14 @@ header {
 -------------------------------*/
 
 .education {
-
+/* 
     animation-name: bg-Color-Change ;
  animation-duration: 10s;
  animation-delay: -2s;
  animation-iteration-count: infinite;
-}
+} */
 
-@keyframes bg-Color-Change {
+/* @keyframes bg-Color-Change {
     0% {
         background-color: rgb(148, 163, 175);
     }
@@ -162,13 +162,13 @@ header {
     }
     100% {
         background-color: rgb(171, 169, 173);
-    }
+    } */
 
 
-  /* background-image: url(..images\joanna-kosinska-unsplash.jpg);
+  background-image: url("/my-first-site/images/joanna-kosinska-unsplash.jpg");
   background-size: cover;
   background-position: top right;
-  padding-bottom: 100px; */
+  padding-bottom: 100px;
    } 
 .education p {
   width: 60%;
