@@ -89,7 +89,7 @@ header {
 
 /* myself
 -------------------------------*/
-.myself {
+#myself {
   background: #304d6d;
 }
 
@@ -135,6 +135,30 @@ header {
   justify-content: center;
   align-content: stretch;
 }
+/* navbar */
+#topnav {
+  background-color: rgb(69, 83, 85);
+  padding: 10px 50px 10px 50px;
+  overflow: hidden;
+}
+#topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  text-align: center;
+}
+#topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+#topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
 
 /* education
 -------------------------------*/
@@ -164,7 +188,7 @@ header {
         background-color: rgb(171, 169, 173);
     } */
 
-
+/* background img - change \ to / */
   background-image: url("/my-first-site/images/joanna-kosinska-unsplash.jpg");
   background-size: cover;
   background-position: top right;
@@ -219,6 +243,7 @@ footer {
     /* margin-right: 20px; */
     /* margin-left: 20px; */
 }
+
 h1 {
   line-height: 0.9;
 }
