@@ -95,7 +95,7 @@ header {
 
 /* hobbies
 -------------------------------*/
-.hobbies {
+#hobbies {
   background: #6068b4;
 }
 .hobby-item {
@@ -113,7 +113,7 @@ header {
 
 /* project
 -------------------------------*/
-.project {
+#project {
   background: #3d5268;
 }
 /* btn- button */
@@ -123,7 +123,7 @@ header {
 
 /* skills
 -------------------------------*/
-.skills {
+#skills {
   background: #98ad7f;
 }
 .skill-items {
@@ -163,7 +163,7 @@ header {
 /* education
 -------------------------------*/
 
-.education {
+#education {
 /* 
     animation-name: bg-Color-Change ;
  animation-duration: 10s;
@@ -199,10 +199,10 @@ header {
 }
 /* CONTACT INFO
 -------------------------------*/
-footer {
+#footer {
   background: #12263b;
   color: #f7fff7;
- 
+  text-align: center;
 }
 .contact-list {
   list-style-type: none;
@@ -249,6 +249,8 @@ h1 {
 }
 h2 {
   line-height: 1;
+  margin-bottom: 10px;
+ 
 }
 .contact-list a {
   padding: 5px;
