@@ -189,7 +189,8 @@ header {
     } */
 
 /* background img - change \ to / */
-  background-image: url("/my-first-site/images/joanna-kosinska-unsplash.jpg");
+/* add .. before relative path  */
+  background-image: url('../images/joanna-kosinska-unsplash.jpg');
   background-size: cover;
   background-position: top right;
   padding-bottom: 100px;
