@@ -38,6 +38,7 @@ a:hover {
 h1 {
   font-size: 67px;  
   line-height: 1; 
+  padding-block-start: inherit;
 }
 h2 {
   font-size: 45px;
@@ -87,6 +88,25 @@ header {
   /* max-width: 85%; */
 }
 
+  .welcome-section-wrap {
+    padding-top: 0px;
+    margin-top: 0px;
+    display: block;
+    height: 100vh;
+      max-width: 800px;
+      width: 85%;
+      margin: 0 auto;
+      padding: 60px 0;
+
+      @font-face {
+        font-family: "MyWebFont";
+        src: url("WebFont.eot");
+        src: url("WebFont.eot?iefix") format("eot"),
+          url("WebFont.woff") format("woff"), url("WebFont.ttf") format("truetype"),
+          url("WebFont.svg#webfont") format("svg");
+      }
+  }
+
 /* myself
 -------------------------------*/
 #myself {
@@ -113,11 +133,11 @@ header {
 
 /* project
 -------------------------------*/
-#project {
+#projects {
   background: #3d5268;
 }
 /* btn- button */
-.project a {
+.projects a {
   color:#ffe660 ;
 }
 /* Dropdown Button */
@@ -176,21 +196,22 @@ header {
   align-content: stretch;
 }
 /* navbar */
-#topnav {
+#navbar {
   background-color: rgb(69, 83, 85);
-  padding: 10px 50px 10px 50px;
+  padding: 10px 78px 10px 78px;
   overflow: hidden;
+  position: fixed;
 }
-#topnav a {
+#navbar a {
   float: left;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 22.1px;
   text-decoration: none;
   font-size: 17px;
   text-align: center;
 }
-#topnav a:hover {
+#navbar a:hover {
   background-color: #ddd;
   color: black;
 }
@@ -295,5 +316,8 @@ h2 {
 }
 .contact-list a {
   padding: 5px;
+}
+.navbar{
+  padding: 0px; 
 }
 }
