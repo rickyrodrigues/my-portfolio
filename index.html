@@ -1,329 +1,1248 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
 <head>
-  <link rel="canonical" href="https://rickyrodrigues.github.io/my-portfolio/"/>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ricky.D.Rodrigues,C.S. Engineering Student + Front End developer (expected 2023) +Artist</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css\styles.css">
-  <!-- <link rel=“stylesheet” type=“text/css” href=“styles.css”> -->
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky D. Rodrigues - Cloud & Web Solutions Expert</title>
+    <meta name="description" content="Expert in Cloud Computing, Web Development, AI/ML Solutions. Microsoft Certified Azure Developer with proven track record in scalable applications.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --accent-color: #28a745;
+            --dark-color: #212529;
+            --light-color: #f8f9fa;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --shadow: 0 10px 30px rgba(0,0,0,0.1);
+            --shadow-hover: 0 20px 40px rgba(0,0,0,0.15);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-<body>
-  <main>
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
-    <header>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0DNFRB06WE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+        [data-theme="dark"] {
+            --primary-color: #4dabf7;
+            --secondary-color: #adb5bd;
+            --accent-color: #51cf66;
+            --dark-color: #ffffff;
+            --light-color: #121212;
+            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+        }
 
-  gtag('config', 'G-0DNFRB06WE');
-</script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <div id="navbar">
-        <a href="#header">PROFILE </a>
-        <a href="#myself">MYSELF</a>
-        <a href="#hobbies">HOBBIES</a>
-        <a href="#projects">PROJECTS</a>
-        <a href="#skills">SKILLS</a>
-        <a href="#education">EDUCATION</a>
-        <a href="#footer">CONTACT</a>
-        
-        </div>
-        <section id ="welcome-section">
-      <div class="welcome-section-wrap">        
-        <h1>Ricky .D .Rodrigues</h1>
-        <!-- <h1>Ricky .D .Rodrigues</h1> considered one spelling put spaces after name b4 dots -->
-        <h2>C.S. Engineering Student +Front End developer (expected 2023) +Artist</h2>
-       
-        <p>AS a developer I specialize in creating modular and scalable front end architecture .AS an artist its my responsibility that while atop the Buckingham aisle I carter to the needs of both the heart and soul while the evolutionary logotherapist within me helps to keep the mind in tow.</p>
-        <p>so my berthen its a humble request to bear with me while i steady the bandwagon of webdevelopement.</p>
-      </div>
-    </section>
-    </header>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <!-- ******************** About ME  ********************* -->
-    <section id="myself">
-      <div class="content-wrap">
-        <h2>MYSELF</h2>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            transition: var(--transition);
+        }
 
-        <img src="images\mypicture.png" alt="description of image" alt="problem here">
-        <p>just your neighbourhood christan guy.</p>
-        <p> check more about me on the given links at the bottom or the following link to my website
-          ---yet to be implemented---</p>
+        [data-theme="dark"] body {
+            background-color: #0d1117;
+            color: var(--dark-color);
+        }
 
-        <a class="btn" href="https://github.com/rickyrodrigues">My Github Profile</a>.
-    </section>
-     </div>
-    <!-- <img src="images\roman-melnychuk-unsplash.jpg" alt="description of image"> -->
-     <!-- Copy the whole <section> block to add more projects. -->
+        /* Navigation */
+        .navbar {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            transition: var(--transition);
+            padding: 1rem 0;
+        }
 
-    <!-- hobbies -->
+        [data-theme="dark"] .navbar {
+            background: rgba(13, 17, 23, 0.95);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-    <section id="hobbies">
-      <div class="content-wrap item-details divider">
-        <h2>HOBBIES</h2>
-        <!-- <img src="my-first-site\images\IMG_20210927_210137 - Copy (FILEminimizer).jpg" alt="description of image"> -->
-        <img src="images\roman-melnychuk-unsplash.jpg" alt="description of image">
-        <p>Many of you may already know about it. If not tally ho!</P>
+        .navbar-brand {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
 
-        <h3>The following are my hobbies</h3>
-        <!--  ART  -->
-        <section class="hobby-item">
-          <div class="hobby-details">
-            <h3>ART</h3>
-            <hr>
-            <p> includes but is not limited to the following</p>
-            <ol>
-              <li>DRAWING</li>
-              <li>PAINTING</li>
-              <li>SKETCHING</li>
-              <li>MODELMAKING</li>
-              <li>CRAYONCARVING</li>
-              <li>WOODCARVING</li>
-              <li>DIFFERENT TYPES OF CRAFTS</li>
-            </ol>
-          </div>
-          <div class="hobby-summary">
-            <img src="images\steve-johnson-unsplash.jpg" alt="description of image">
-            <p>Art is the breath that empowers me. Its relams enchanting, too mesmerising that once engrossed within its easierv to break free from the clutches of a Kraken than the enchantments it casts over my soul. Art is my meduessas head which turns the soul within to a lovely marble statue</P>
-        <p>Check my misadventures in the relams of art over <a href="https://rickyrodrigues.github.io/My-Art/" target="_blank">here</a></p>
-            </div>
-        </section>
-        <!--  reading  -->
-        <section class="hobby-item">
-          <div class="hobby-details">
-            <h3>READING</h3>
-            <hr>
-            <p> includes but is not limited to the following</p>
-            <ol>
-              <li>FANTASY</li>
-              <li>FICTION</li>
-              <li>SCIENCE-FICTION</li>
-              <li>THRILLERS</li>
-              <li>SELF-HELP</li>
-              <li>NOVELS BY THE VICTORIAN HIGHLORDS OF THE GOLDEN AGES</li>
-            </ol>
-          </div>
-          <div class="hobby-summary">
-            <img src="images\henry-be-unsplash (1).jpg" alt="description of image">
-            <p> As a guy who cannot live without the sunday morning newspaper, I am someone whose mind iterates from reality to worlds unseen .Also this jackass being a knight in the lands of the victorian highlords is unpredictabelly the ocassional court jester, poet, historian ,knight and many more personas unseen.</p>
-          </div>
-        </section>
+        .navbar-nav .nav-link {
+            font-weight: 500;
+            margin: 0 0.5rem;
+            transition: var(--transition);
+            position: relative;
+        }
 
-        <!-- other hobbies -->
-        <section class="hobby-item">
-          <div class="hobby-details">
-            <h3>OTHER HOBBIES</h3>
-            <hr>
-            <p>Some of my other hobbies are</p>
-            <ol>
-              <li> EXCERCISING</li>
-              <li> MEDITATING</li>
-              <li> CYCLING</li>
-              <li> PRACTICING SELF HYPNOSIS AND MINDFULLNESS</li>
-            </ol>
-          </div>
-          <div class="hobby-summary">
-            <img src="images\nick-page-unsplash.jpg" alt="description of image">
-            <p>"This is something that I iterate to find the meaning of why the Almighty brought me into this realm of existence. It helps me to stare deep within and find the link between the cores of thoughts and feelings through the looking glass of empathy. It often helps to calm the restless mind, unyeilding heart and Ponder the complexity within simplicity, listening to the sound of silence. " </p>
-          </div>
-        </section>
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
 
-      
-         </div>
-      </section>
-        <!-- End of hobby block. -->
+        .navbar-nav .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background: var(--gradient-1);
+            transition: var(--transition);
+            transform: translateX(-50%);
+        }
 
-        <section id="projects">
-        <div class="content-wrap">
-        
+        .navbar-nav .nav-link:hover::after {
+            width: 80%;
+        }
 
-            <h2>Projects and certifications</h2>
-            <img src="images\sharon-mccutcheon-unsplash.jpg" alt="description of image">
+        .theme-toggle {
+            background: none;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            border-radius: 50px;
+            padding: 0.5rem 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+        }
 
-            <p> this is where I will be uploading links for my future projets. until then stay tuned!</p>
-            <h3>PROJECTS</h3>   
-            </ol>
-            <div class="dropdown">
-              <button class="dropbtn">Click Here</button>
-              <div class="dropdown-content">
-                <div class="dropdowna">
-              <button class="dropbtn">scratch projects</button> 
-              </div>
-                <!-- <h2>web-developement</h2> -->
-                <a href="https://rickyrodrigues.github.io/My-Art/" target="_blank" class="project-tile">MY ART</a>
-                <a href="https://rickyrodrigues.github.io/tribute-page/" target="_blank">TRIBUTE PAGE</a> 
-                <a href="https://rickyrodrigues.github.io/survey-form/" target="_blank">SURVEY FORM</a>
-                <a href="https://rickyrodrigues.github.io/projectno-3/" target="_blank">PRODUCT LANDING PAGE</a>
-                <a href="https://rickyrodrigues.github.io/4-technical-documentation/" target="_blank">TECHNICAL-DOCUMENTATION</a>
-                
-              </div>
-            </div>
-            <h3>certifications</h3>
-            <hr>
-            <p>Google Grasshopper certifications</p>
-            <img src="images\ReactNative-snapshot-image430656974124463051.png" alt="google Grasshopper certifications">
-            <img src="images\ReactNative-snapshot-image5923745184773842662.png" alt="google Grasshopper certifications">
+        .theme-toggle:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="rgba(255,255,255,0.1)"/><stop offset="100%" stop-color="rgba(255,255,255,0)"/></radialGradient></defs><circle cx="200" cy="200" r="100" fill="url(%23a)"/><circle cx="800" cy="300" r="150" fill="url(%23a)"/><circle cx="400" cy="700" r="120" fill="url(%23a)"/></svg>') no-repeat center center;
+            background-size: cover;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 2rem;
+            max-width: 600px;
+        }
+
+        .btn-hero {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition);
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn-hero:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-hover);
+            color: var(--primary-color);
+        }
+
+        .btn-hero-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .btn-hero-outline:hover {
+            background: white;
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 4px;
+            background: var(--gradient-1);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about-card {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .about-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+        }
+
+        .about-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .stats-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gradient-2);
+            border-radius: 20px;
+            color: white;
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .stats-card:hover {
+            transform: scale(1.05);
+        }
+
+        .stats-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+        }
+
+        /* Skills Section */
+        .skill-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .skill-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .skill-icon {
+            font-size: 3rem;
+            background: var(--gradient-3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .project-filters {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .filter-btn {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            margin: 0.25rem;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .project-card {
+            background: #161b22;
+            border: 1px solid #30363d;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .project-image {
+            height: 250px;
+            background: var(--gradient-2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+
+        .project-content {
+            padding: 2rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: var(--dark-color);
+        }
+
+        .project-description {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tech-tag {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            margin-right: 1rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .project-links a:hover {
+            transform: translateX(5px);
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--gradient-1);
+            color: white;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 3rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .form-control {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            color: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-control:focus {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: white;
+            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.25);
+            color: white;
+        }
+
+        .btn-submit {
+            background: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            font-weight: 600;
+            width: 100%;
+            transition: var(--transition);
+        }
+
+        .btn-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .contact-info {
+            padding: 2rem 0;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-item i {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            width: 40px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0d1117;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+
+        .social-links {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 0.5rem;
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-3px) scale(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
             
-            <!-- <hr> -->
-            <p>linkedinlearning certifications</p>
-            <img src="images\CertificateOfCompletion_HTML Essential Training-1.jpg" alt="description of image">
-            <img src="images\CertificateOfCompletion_CSS Essential Training-1.jpg" alt="description of image">
-            <img src="images\CertificateOfCompletion_JavaScript Essential Training -1.jpg" alt="description of image">
-            <p>Learn more about me here</p>
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .contact-form {
+                padding: 2rem;
+            }
+        }
 
-            <a class="btn" href="" id="profile-link" target="_blank">https://github.com/rickyrodrigues</a>
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
 
-        </section>
-      </div>
-      <!-- End of Project block. -->
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-      <!-- ***********************  SKILLS  *********************** -->
-      <section id="skills">
-        <div class="content-wrap item-details divider">
-          <h2>SKILLS I POSSESS</h2>
-          <p>The following are the skills i picked up from various resources</p>
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
 
-          <!-- Copy this whole <section> block to add more jobs. -->
-            <section class="hobby-item">
-              <div class="hobby-details">
-                <h3>Html</h3>
-                <hr>
-                <p>knowledge of Html 5</p>              
-                </div>
-                <div class="hobby-summury">
-           
-             <h3>SOURCES OF LEARNING</h3>     
-                    <ol>
-              <li>linkedinlearning</li>
-              <li>devcommunity.to</li>
-              <li>MDN DOCUMENTS</li>
-              <li>freecodecamp.org</li>
-            </ol></div>
-          </section>
-  
-            <section class="hobby-item">
-              <div class="hobby-details">
-                <h3>Css</h3>
-                <hr>
-                <p>knowledge of Css,Css2,Css3</p>
-              </div>
-              <div class="hobby-summury">
-           <h3>SOURCES OF LEARNING</h3>
-            <ol>
-              <li>linkedinlearning</li>
-              <li>devcommunity.to</li>
-              <li>freecodecamp.org</li>
-              <li>various coading channels on instagram</li>
-            </ol></div>
-          </section>
-  
-            <section class="hobby-item">
-              <div class="hobby-details">
-            <h3>Javascript</h3>
-            <hr>
-            <p>completed basics/ fundamentals of JavaScript</p>
-            <p>currently pursuing different javascript frameworks</p>
-           
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Success Message */
+        .success-message {
+            background: var(--accent-color);
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        /* Scroll to Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--gradient-1);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: var(--transition);
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Ricky.D.Rodrigues</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="theme-toggle ms-2" id="themeToggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
             </div>
-            <div class="hobby-summury">
-            <h3>SOURCES OF LEARNING</h3>
-              <ol>            
-              <li>linkedinlearning</li>
-              <li>devcommunity.to</li>
-              <li>Google Grasshopper</li>
-              <li>freecodecamp.org</li>
-            </ol></div>
-          </section>
-
-            <section class="hobby-item">
-              <div class="hobby-details">
-            <h3>git and github</h3>
-            <hr>
-            <p>completed basics/ fundamentals</p>
-            <p>able to create manipulate repositories</p>
-            <p>hosted the site you are looking on github</p>
-           
-            </div>
-            <div class="hobby-summury">
-            <h3>SOURCES OF LEARNING</h3>
-              <ol>            
-              <li>youtube</li>
-              <li>devcommunity.to</li>
-              <li>github.documents</li>
-              <li>freecodecamp.org</li>
-            </ol></div>
-          </section>
-
-            <section class="hobby-item">
-              <div class="hobby-details">
-            <h3>web /cloud hosting</h3>
-            <hr>
-            <p>completed basics/ fundamentals</p>
-            <p>able to link custom domains and host websites</p>
-            <p>cloud hodsting on google firebase</p>          
-            <p>hosting on github pages</p>
-            <p> test hosting on w3school spaces</p> 
-
-            </div>
-            <div class="hobby-summury">
-          <h3>SOURCES OF LEARNING</h3>
-            <ol>
-              <li>youtube</li>
-              <li>devcommunity.to</li>
-              <li>github.documents</li>
-              <li>freecodecamp.org</li>
-              <li>infinity free</li>
-            </ol></div>
-          </section>
-      </section>
-      </div>
-      
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section id="education">
-        <div class="content-wrap item-details">
-          
-          <h2>Education</h2>
-          <h3>St Ann's Millennium English Medium High School-</h3>
-          <p>CERTIFICATION OF SECONDRY SCHOOLING (S.S.C),2007-2019</p>
-
-          <h3>R.P.Jr college of Science ,Commerce and Arts -Affliated to the University of Mumbai</h3>
-          <p>CERTIFICATION OF HIGHER SCHOOLING (H.S.C),2019-2021</p>
-
-          <h3>Fr Concieciaco Rodrigues College OF Engineering AND Information Technology -Affliated to the University of Mumbai</h3>
-          <p> UNDERGRADUATE DEGREE IN COMPUTER SCIENCE-currently</p>
-          <!-- End of School block. -->
-      </section>
-      </div>
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-     
-      <section id="footer">
-        <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
-
-          <!-- Social media and contact links. Add or remove. -->
-          <ul class="contact-list">
-            <li><a href="mailto:rickyrodrigz1762003@gmail.com">rickyrodrigz1762003@gmail.com</a></li>
-            <li><a href="R.D.Rodrigz.com" target="_blank">R.D.Rodrigz.com</a></li>
-            <li><a href="https://www.linkedin.com/in/ricky-rodrigues-97b305201" target="_blank">linkedin</a></li>
-            <li><a href="https://www.facebook.com/profile.php?id=100036152793710/" target="_blank">facebook</a></li>
-            <li><a href="https://www.instagram.com/ricky_rodrigz/" target="_blank">Instagram</a></li>
-            <li><a href="https://github.com/rickyrodrigues" target="_blank">github</a></li>
-          </ul>
         </div>
-      </footer>
-     </div>
-  </main>
-   <script src="https:/cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
- </body> 
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content" data-aos="fade-right">
+                    <h1>Cloud & Web Solutions Expert</h1>
+                    <h2>Microsoft Certified Azure Developer</h2>
+                    <p>Specializing in scalable cloud architecture, AI-powered applications, and modern web development. I transform complex technical challenges into elegant, profitable solutions.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-hero">
+                            <i class="fas fa-rocket me-2"></i>Start Your Project
+                        </a>
+                        <a href="#projects" class="btn-hero-outline">
+                            <i class="fas fa-eye me-2"></i>View My Work
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="text-center text-white">
+                        <i class="fas fa-code" style="font-size: 15rem; opacity: 0.3;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row">
+                            <div class="col-md-4 text-center mb-4">
+                                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='grad1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23667eea;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%23764ba2;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='100' cy='100' r='100' fill='url(%23grad1)'/%3E%3Ctext x='100' y='120' font-family='Arial' font-size='80' fill='white' text-anchor='middle'%3ERR%3C/text%3E%3C/svg%3E" alt="Ricky Rodrigues" class="img-fluid rounded-circle mb-3" style="width: 200px; height: 200px;">
+                                <h4>Ricky D. Rodrigues</h4>
+                                <p class="text-muted">Microsoft Learn Student Ambassador (Gold)</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p class="lead">Passionate Computer Science Engineering student with hands-on experience in cloud computing, AI/ML, and web development. I specialize in creating scalable solutions that drive business growth.</p>
+                                <p>As a Microsoft Certified Azure Developer and Gold Student Ambassador, I've led development of AI-powered applications that were selected by Microsoft for further implementation. My expertise spans across cloud migration, infrastructure optimization, and modern web technologies.</p>
+                                <div class="row mt-4">
+                                    <div class="col-4">
+                                        <div class="stats-card">
+                                            <span class="stats-number">1000+</span>
+                                            <small>Students Mentored</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stats-card">
+                                            <span class="stats-number">10+</span>
+                                            <small>Certifications</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="stats-card">
+                                            <span class="stats-number">50+</span>
+                                            <small>Projects Completed</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Expertise</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <i class="fas fa-cloud skill-icon"></i>
+                        <h4>Cloud Computing</h4>
+                        <p>Microsoft Azure, Google Cloud Platform, scalable architecture design, VM instances, load balancers</p>
+                        <div class="mt-3">
+                            <span class="badge bg-primary me-1">Azure</span>
+                            <span class="badge bg-primary me-1">GCP</span>
+                            <span class="badge bg-primary">Migration</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-card">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h4>Web Development</h4>
+                        <p>Modern web applications, responsive design, progressive web apps, API development</p>
+                        <div class="mt-3">
+                            <span class="badge bg-success me-1">HTML5/CSS3</span>
+                            <span class="badge bg-success me-1">JavaScript</span>
+                            <span class="badge bg-success">Responsive</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-card">
+                        <i class="fas fa-brain skill-icon"></i>
+                        <h4>AI/ML Solutions</h4>
+                        <p>Azure OpenAI, custom AI models, chatbots, machine learning implementations</p>
+                        <div class="mt-3">
+                            <span class="badge bg-warning me-1">Azure AI</span>
+                            <span class="badge bg-warning me-1">OpenAI</span>
+                            <span class="badge bg-warning">ML</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-card">
+                        <i class="fas fa-database skill-icon"></i>
+                        <h4>Data & APIs</h4>
+                        <p>Database design, API development, data migration, system integration</p>
+                        <div class="mt-3">
+                            <span class="badge bg-info me-1">SQL</span>
+                            <span class="badge bg-info me-1">APIs</span>
+                            <span class="badge bg-info">Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="cloud">Cloud Computing</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="migration">Migration</button>
+            </div>
+
+            <div class="row projects-container">
+                <!-- AI Tutor Project -->
+                <div class="col-lg-6 mb-4 project-item" data-category="ai" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Multilingual AI Tutor ChatApp</h3>
+                            <p class="project-description">Revolutionary AI-powered educational platform covering Physics, Chemistry, Math, and Biology. Recognized as most promising entry at Microsoft AI Chat App Hack.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Azure OpenAI</span>
+                                <span class="tech-tag">Custom Dataset</span>
+                                <span class="tech-tag">Multilingual</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+                                <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MLSA Support Chatbot -->
+                <div class="col-lg-6 mb-4 project-item" data-category="ai" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">MLSA Support Chatbot "Amy"</h3>
+                            <p class="project-description">AI-powered chatbot finalist for Microsoft Learn Student Ambassador program. Features automated escalation and resource navigation to improve program efficiency.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Azure OpenAI</span>
+                                <span class="tech-tag">Copilot Studio</span>
+                                <span class="tech-tag">Azure Search</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Live Demo</a>
+                                <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud Migration Platform -->
+                <div class="col-lg-6 mb-4 project-item" data-category="cloud migration" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Scalable Training Platform</h3>
+                            <p class="project-description">Enterprise-grade cloud migration solution using Azure infrastructure. Engineered with VM instances, load balancers, and DNS zones for concurrent users.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Microsoft Azure</span>
+                                <span class="tech-tag">VM Instances</span>
+                                <span class="tech-tag">Load Balancers</span>
+                                <span class="tech-tag">DNS Zones</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Case Study</a>
+                                <a href="#"><i class="fas fa-chart-line me-1"></i>Performance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Portfolio -->
+                <div class="col-lg-6 mb-4 project-item" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Modern Web Applications</h3>
+                            <p class="project-description">Collection of responsive, high-performance web applications built with modern frameworks and optimized for user experience and conversion.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5/CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Bootstrap</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Portfolio</a>
+                                <a href="#"><i class="fab fa-github me-1"></i>Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- API Development -->
+                <div class="col-lg-6 mb-4 project-item" data-category="cloud web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-plug"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Enterprise API Solutions</h3>
+                            <p class="project-description">Scalable API development using Google Cloud Apigee platform. Designed for high-traffic applications with robust security and monitoring.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Google Cloud</span>
+                                <span class="tech-tag">Apigee API</span>
+                                <span class="tech-tag">Security</span>
+                                <span class="tech-tag">Monitoring</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Documentation</a>
+                                <a href="#"><i class="fas fa-code me-1"></i>API Reference</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GIS Mapping Solution -->
+                <div class="col-lg-6 mb-4 project-item" data-category="web cloud" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">GIS Mapping Platform</h3>
+                            <p class="project-description">Interactive geographic information system with real-time data processing and visualization. Built for urban planning and resource management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">GIS</span>
+                                <span class="tech-tag">Real-time Data</span>
+                                <span class="tech-tag">Visualization</span>
+                                <span class="tech-tag">Analytics</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-external-link-alt me-1"></i>Live Map</a>
+                                <a href="#"><i class="fas fa-chart-area me-1"></i>Analytics</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title text-white" data-aos="fade-up">Let's Build Something Amazing</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
+                        <form id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" placeholder="Your Name" required name="name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" placeholder="Your Email" required name="email">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" placeholder="Your Phone" name="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <select class="form-control" name="service" required>
+                                        <option value="">Select Service</option>
+                                        <option value="cloud-migration">Cloud Migration</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="ai-solutions">AI/ML Solutions</option>
+                                        <option value="consultation">Technical Consultation</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <textarea class="form-control" rows="5" placeholder="Tell me about your project..." required name="message"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn-submit">
+                                <span class="submit-text">Send Message</span>
+                                <span class="loading" style="display: none;"></span>
+                            </button>
+                            <div class="success-message" id="successMessage">
+                                <i class="fas fa-check-circle me-2"></i>Thank you! Your message has been sent successfully. I'll get back to you within 24 hours.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h5>Email</h5>
+                            <p>crce.9636.ce@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h5>Phone</h5>
+                            <p>+91-8329147878</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h5>Location</h5>
+                            <p>Vasai-Virar, Maharashtra</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links" data-aos="fade-up">
+                <a href="mailto:crce.9636.ce@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://github.com/rickyrodrigues" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/ricky-rodrigues-97b305201" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/ricky_rodrigz/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100036152793710/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+            </div>
+            <div class="text-center">
+                <p>&copy; 2024 Ricky D. Rodrigues. All rights reserved. Built with passion for excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        const icon = themeToggle.querySelector('i');
+
+        // Check for saved theme
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.setAttribute('data-theme', savedTheme);
+            if (savedTheme === 'dark') {
+                icon.className = 'fas fa-sun';
+            }
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            if (currentTheme === 'dark') {
+                body.setAttribute('data-theme', 'light');
+                icon.className = 'fas fa-moon';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                icon.className = 'fas fa-sun';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Smooth Scrolling
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+                const target = $(this.getAttribute('href'));
+                if (target.length) {
+                    $('html, body').stop().animate({
+                        scrollTop: target.offset().top - 80
+                    }, 1000);
+                }
+            });
+        });
+
+        // Project Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                projectItems.forEach(item => {
+                    if (filterValue === 'all') {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'scale(1)';
+                        }, 100);
+                    } else {
+                        const categories = item.getAttribute('data-category').split(' ');
+                        if (categories.includes(filterValue)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Contact Form
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.btn-submit');
+            const submitText = submitBtn.querySelector('.submit-text');
+            const loading = submitBtn.querySelector('.loading');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Show loading state
+            submitText.style.display = 'none';
+            loading.style.display = 'inline-block';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission (replace with actual form handler)
+            setTimeout(() => {
+                // Hide loading state
+                loading.style.display = 'none';
+                submitText.style.display = 'inline';
+                submitBtn.disabled = false;
+                
+                // Show success message
+                successMessage.style.display = 'block';
+                
+                // Reset form
+                this.reset();
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }, 2000);
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            const scrollTop = document.getElementById('scrollTop');
+            
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                if (document.body.getAttribute('data-theme') === 'dark') {
+                    navbar.style.background = 'rgba(13, 17, 23, 0.98)';
+                }
+                scrollTop.classList.add('visible');
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                if (document.body.getAttribute('data-theme') === 'dark') {
+                    navbar.style.background = 'rgba(13, 17, 23, 0.95)';
+                }
+                scrollTop.classList.remove('visible');
+            }
+        });
+
+        // Scroll to top functionality
+        document.getElementById('scrollTop').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all fade-in elements
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Active nav link on scroll
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (window.scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Typing animation for hero text
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing animation when page loads
+        window.addEventListener('load', function() {
+            const heroTitle = document.querySelector('.hero h1');
+            const originalText = heroTitle.textContent;
+            typeWriter(heroTitle, originalText, 80);
+        });
+    </script>
+</body>
 </html>
-
-
-
-
